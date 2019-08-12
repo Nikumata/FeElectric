@@ -89,10 +89,10 @@ public class CsvUtil {
 //                String index = item[0];
 //                String content = item[1];
 //                String industry = item[2];
-////                String last = item[item.length-1];//这就是你要的数据了   
-//                //int value = Integer.parseInt(last);//如果是数值，可以转化为数值   
+//                String last = item[item.length-1];//这就是你要的数据了   
+//                int value = Integer.parseInt(last);//如果是数值，可以转化为数值   
 //                System.out.println("index :" + index + " content:"  + content + " industry:" + industry);    
-////            System.out.println(line);
+//                System.out.println(line);
 //            }    
 //        } catch (Exception e) {    
 //            e.printStackTrace();    
@@ -112,7 +112,9 @@ public class CsvUtil {
 				String monthDay = record[2] == null ? "unknown" : record[2];
 				String year = record[3] == null ? "unknown" : record[3];
 				String title = record[4] == null ? "unknown" : record[4];
-				String summary = record[5] == null ? "unknown" : record[5];					
+				String summary = record[5] == null ? "unknown" : record[5];
+				summary = summary.replace(",", "."); // 将逗号替换成句号
+				System.out.println(summary);
 //					System.out.println("index :" + index + " content:" + content + " industry:" + industry);
 				articles.add(new Article(category, index, monthDay, year, title, summary));
 

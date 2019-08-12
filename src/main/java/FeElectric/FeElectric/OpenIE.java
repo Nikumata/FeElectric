@@ -58,7 +58,7 @@ public class OpenIE {
 		Process p= new Process();
 		p.init(triples, 1);
 		// 指定输出路径
-		String outPath = "D:\\work\\FeElectric\\data\\submission.csv";
+		String outPath = "..\\data\\submission.csv";
 //		CsvUtil.writeCsv(headers, data, outPath);
 		CsvUtil.writeCsv(headers, p.getResult(), outPath);
 		

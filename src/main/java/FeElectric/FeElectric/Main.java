@@ -52,14 +52,14 @@ public class Main {
 		for (String[] triples : article.getTriples()) {
 			bData.add(new String[] { article.getCategory(), article.getIndex(), triples[0], triples[1], triples[2] });
 		}
-		// 对三元组进行冗余筛选
-		Process p = new Process();
-		p.init(article.getTriples(), 1);
-		article.setTriples(p.getResult());
-		System.out.println("冗余筛选后三元组个数：" + article.getTriples().size());
-		for (String[] triples : article.getTriples()) {
-			aData.add(new String[] { article.getCategory(), article.getIndex(), triples[0], triples[1], triples[2] });
-		}
+//		// 对三元组进行冗余筛选
+//		Process p = new Process();
+//		p.init(article.getTriples(), 1);
+//		article.setTriples(p.getResult());
+//		System.out.println("冗余筛选后三元组个数：" + article.getTriples().size());
+//		for (String[] triples : article.getTriples()) {
+//			aData.add(new String[] { article.getCategory(), article.getIndex(), triples[0], triples[1], triples[2] });
+//		}
 		
 //		for (Article article : articles) {
 //			// 对每一篇文章提取三元组
