@@ -40,26 +40,20 @@ public class FileUtil {
 	}
 
 	// 读txt文件
-	public static String readTxt(File file) {
+	public static String readTxt(String path) {
 		String data = "";
-		BufferedReader br = null;
-		try {
-			br = new BufferedReader(new FileReader(file));
-			String line = "";
-			while ((line = br.readLine()) != null) {
-				data += line;
-			}
-		} catch (Exception e) {
-		} finally {
-			if (br != null) {
-				try {
-					br.close();
-					br = null;
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+		try (FileReader reader = new FileReader(path);
+	             BufferedReader br = new BufferedReader(reader) // 建立一个对象，它把文件内容转成计算机能读懂的语言
+	        ) {
+	            String line;
+	            //网友推荐更加简洁的写法
+	            while ((line = br.readLine()) != null) {
+	                // 一次读入一行数据
+	                data += line;
+	            }
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
 		return data;
 	}
 

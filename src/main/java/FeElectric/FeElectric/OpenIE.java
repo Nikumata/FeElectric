@@ -138,7 +138,7 @@ public class OpenIE {
 		long beginTime = System.currentTimeMillis(); // 开始时间
 		
 		// 准备输入文件
-		String dataset = FileUtil.readTxt(new File(filePath + fileName + ".txt"));
+		String dataset = FileUtil.readTxt(filePath + fileName + ".txt");
 		// 注解文档
 		Annotation doc = new Annotation(dataset);
 		pipeline.annotate(doc);

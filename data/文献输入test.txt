@@ -1,0 +1,23 @@
+Multiferroic materials refer to a special class of materials which simultaneously possess more than one primary ferroic order
+parameters such as ferromagnetic (FM), ferroelectric (FE), and ferroelastic (FA) orders in a single phase.1 In general, magnetism usually originates from the ordered spins of electrons in the partially filled d/f orbitals of transition metals and breaks the
+time-reversal symmetry, while ferroelectricity often results from residual polarization due to stable off-centered ion with
+empty d/f orbitals, which breaks the space-inversion symmetry. Ferroelasticity comes from the lattice distortions and breaks
+neither the time-reversal symmetry nor the space-inversion symmetry. All these ferroic materials with switchable magnetization, electrical polarizations, or strain have been widely exploited for applications in nonvolatile memories.2–4 And the multiferroics with coexistent or even strongly coupled ferroic orders can give rise to new applications including high-density
+multistate data storage, energy transformation, signal generation and so on, which therefore have attracted enormous attention
+in the past decade. It is known that in commercial random access memories (RAMs), data writing in FM RAMs is energy consuming while reading operation in FE RAMs is destructive, therefore, the magnetoelectric FM–FE multiferroic materials with
+a combination of efficient writing and low-cost reading are highly desirable. However, the mutual exclusion between magnetism and electric dipole make it particularly challenging to incorporate them in the same compound and the investigation on
+the essence of multiferroics is also of fundamental scientific importance.
+With the rapidly growing demand for high-density and high-performance devices, miniaturized and integrated multiferroic
+devices scaled down to only a few nanometers have been a development tendency for ferroic materials. However, for conventional FE materials such as perovskite BaTiO3 and PbTiO3, the polarization and Curie temperature rapidly decreases with the
+reduction of thickness, and ferroelectricity will disappear below a critical thickness due to the finite size-effect and depolarizing electrostatic field and electron screening.5–8 In addition, in ultrathin isotropic films, the Mermin–Wagner theorem dictates
+that the long-range magnetic order is strongly suppressed by thermal fluctuations and realizing ultrathin ferromagnetism is thus hard to achieve. Besides, three-dimensional (3D) materials suffer from the dangling bonds, resulting in poor performance
+in the scale of a few nanometers. Therefore, how to produce robust multiferroic nanodevices available at room temperature
+with high performance remains a big scientific challenge.
+On the other hand, the discovery of graphene9,10 has triggered extensive research interests in two-dimensional
+(2D) materials including silicene,11 boron nitride (h-BN),12 the transition metal dichalcogenides,13,14 phosphorene15 and so
+on, which exhibit distinctive electronic structures and promising applications in nanoelectronics. These materials may provide
+a platform for exploiting next-generation multifunctional nanodevices. Compared with their bulk counterparts, lowdimensional materials often lose some symmetry elements as the result of dimensionality reduction, which favors the appearance of ferroelectricity. Besides, 2D nanosheets exfoliated from the van der Waals (vdW) materials can effectively refrain
+from dangling bonds and thus have a clean surface. In addition, the large surface areas of low-dimensional materials make
+them easier to be modulated by surface adsorption, external strain or electric field. Hence, integration of low-dimensional
+materials with functionalities such as ferromagnetic, FE has attracted significant attention and opened promising routes for
+emerging multistable magnetoelectric nanodevices.
