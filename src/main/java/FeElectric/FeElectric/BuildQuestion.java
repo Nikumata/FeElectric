@@ -154,8 +154,8 @@ public class BuildQuestion {
 
 				String tripleStr = triple.subjectLemmaGloss().toString() + "|" + triple.relationLemmaGloss().toString() + "|" +
 						triple.objectLemmaGloss().toString();
-//				System.out.println("triple : " + triple.subjectLemmaGloss().toString() + ", " + triple.relationLemmaGloss().toString() + ", " +
-//						triple.objectLemmaGloss().toString());
+				System.out.println("triple : " + triple.subjectLemmaGloss().toString() + ", " + triple.relationLemmaGloss().toString() + ", " +
+						triple.objectLemmaGloss().toString());
 				
 				boolean inFlag = false; // 介词标识
 				StringBuffer question = new StringBuffer("what ");
@@ -198,10 +198,15 @@ public class BuildQuestion {
 					}
 					question.append("?");
 				}
+				
+				if (!inFlag) { // 如果relation、object均不包含介词
+					question.delete(0, question.length());
+					question.append("what " + triple.subjectLemmaGloss().toString() + " " + triple.relationLemmaGloss().toString() + " ?");
+				}
 
 				questions.add(question.toString());
-//				System.out.println("question: " + question.toString());
-//				System.out.println("***********************************");
+				System.out.println("question: " + question.toString());
+				System.out.println("***********************************");
 				data.add(new String[] {index + "", sentence.toString(), tripleStr, question.toString()});
 
 			}
