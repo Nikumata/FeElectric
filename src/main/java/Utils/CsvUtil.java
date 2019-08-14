@@ -1,12 +1,15 @@
 package Utils;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -58,8 +61,8 @@ public class CsvUtil {
 		CSVFormat formator = CSVFormat.DEFAULT.withRecordSeparator(NEW_LINE_SEPARATOR);
 
 		// 创建FileWriter对象
-		FileWriter fileWriter = new FileWriter(filePath);
-
+		BufferedWriter fileWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath, true), "utf-8"));
+		
 		// 创建CSVPrinter对象
 		CSVPrinter printer = new CSVPrinter(fileWriter, formator);
 

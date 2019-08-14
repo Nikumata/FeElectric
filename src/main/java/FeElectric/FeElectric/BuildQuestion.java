@@ -169,12 +169,10 @@ public class BuildQuestion {
 						String word = token.get(CoreAnnotations.TextAnnotation.class); // 获取单词信息
 						String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class); // 获取词性标注信息
 						question.append(word + " ");
-						if (pos.equals("IN") || pos.equals("TO")) {
+						if (pos.equals("IN") || pos.equals("TO")) { // relation包含介词
 							inFlag = true;
-							break;
 						}
 					}
-					if (inFlag) break;
 				}
 				if (inFlag) {
 					question.append("?");
