@@ -13,7 +13,7 @@ public class Test {
 	public static void main(String[] args) throws IOException {
 		
 		// 读取文件得到输入
-		String path = "D:\\study\\铁电材料文献分析\\人工提取三元组\\文献输入.txt";
+		String path = "D:\\study\\铁电材料文献分析\\人工提取三元组\\20190815实验\\文献输入人工标注部分.txt";
 		String text = FileUtil.readTxt(path);
 		
 		// 设置csv列名
@@ -28,7 +28,7 @@ public class Test {
 		
 		// 输出到csv
 		// 指定输出路径
-		String outPath = "D:\\study\\铁电材料文献分析\\人工提取三元组\\allenInput1716.csv";
+		String outPath = "D:\\study\\铁电材料文献分析\\人工提取三元组\\20190815实验\\allenInput1227.csv";
 		long startOut = System.currentTimeMillis();
 		CsvUtil.writeCsv(headers, data, outPath);
 		long endOut = System.currentTimeMillis();

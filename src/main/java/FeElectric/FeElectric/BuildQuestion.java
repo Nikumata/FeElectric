@@ -31,6 +31,8 @@ public class BuildQuestion {
 		props = new Properties();
 		// 设置用到的模块属性
 		props.setProperty("annotators", "tokenize,ssplit,pos,lemma,depparse,natlog,openie");
+		props.setProperty("openie.max_entailments_per_clause","3000");
+		props.setProperty("openie.affinity_probability_cap","0.1");
 		pipeline = new StanfordCoreNLP(props);
 	}
 
