@@ -14,6 +14,7 @@ public class Test {
 		
 		// 读取文件得到输入
 		String path = "D:\\study\\铁电材料文献分析\\人工提取三元组\\20190815实验\\文献输入人工标注部分.txt";
+		// 测试
 		String text = FileUtil.readTxt(path);
 		
 		// 设置csv列名
